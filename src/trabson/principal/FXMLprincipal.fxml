@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="trabson.FXMLprincipalController">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox maxHeight="1.7976931348623157E308" prefHeight="31.0" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuBar maxHeight="-Infinity" prefHeight="25.0" prefWidth="860.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Vinhos">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Cadastros" />
+                              <MenuItem mnemonicParsing="false" text="Estoque" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Vendas">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Vender" />
+                              <MenuItem mnemonicParsing="false" text="Relatórios" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Usuários">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Cadastros" />
+                              <MenuItem mnemonicParsing="false" onAction="#Menu_Sair" text="Sair" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <Pane fx:id="PAINEL" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
